@@ -1,0 +1,333 @@
+@import "tailwindcss";
+
+html,
+body {
+  @apply bg-black text-white overflow-x-hidden antialiased;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Light Mode Theme */
+html.light,
+html.light body {
+  @apply bg-white text-slate-950 overflow-x-hidden antialiased;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+/* Light Mode Text Colors */
+html.light {
+  --color-text-primary: rgb(3, 7, 18);
+  --color-text-secondary: rgb(71, 85, 105);
+  --color-text-tertiary: rgb(100, 116, 139);
+  --color-border: rgb(226, 232, 240);
+  --color-border-dark: rgb(203, 213, 225);
+  --color-bg-card: rgb(248, 250, 252);
+  --color-bg-input: rgb(241, 245, 249);
+}
+
+html.light p,
+html.light span,
+html.light h1,
+html.light h2,
+html.light h3,
+html.light h4,
+html.light h5,
+html.light h6,
+html.light button,
+html.light a,
+html.light label {
+  @apply text-slate-950;
+}
+
+html.light button,
+html.light a {
+  @apply text-slate-900;
+}
+
+html.light .text-white\/60 {
+  @apply text-slate-600;
+}
+
+html.light .text-white\/70 {
+  @apply text-slate-700;
+}
+
+html.light .text-white\/80 {
+  @apply text-slate-800;
+}
+
+html.light .text-white\/85 {
+  @apply text-slate-800;
+}
+
+html.light .text-white\/90 {
+  @apply text-slate-900;
+}
+
+html.light .text-white\/40 {
+  @apply text-slate-500;
+}
+
+html.light .text-white\/50 {
+  @apply text-slate-600;
+}
+
+html.light .text-white\/55 {
+  @apply text-slate-600;
+}
+
+html.light .text-white\/30 {
+  @apply text-slate-400;
+}
+
+html.light .text-white {
+  @apply text-slate-950;
+}
+
+/* Light Mode Borders */
+html.light .border-white\/10 {
+  @apply border-slate-300;
+}
+
+html.light .border-white\/15 {
+  @apply border-slate-300;
+}
+
+html.light .border-white\/20 {
+  @apply border-slate-400;
+}
+
+html.light .border-white\/25 {
+  @apply border-slate-400;
+}
+
+/* Light Mode Backgrounds */
+html.light .bg-white\/4 {
+  @apply bg-slate-100;
+}
+
+html.light .bg-white\/3 {
+  @apply bg-slate-50;
+}
+
+html.light .bg-white\/5 {
+  @apply bg-slate-100;
+}
+
+html.light .bg-white\/6 {
+  @apply bg-slate-100;
+}
+
+html.light .bg-white\/7 {
+  @apply bg-slate-200;
+}
+
+html.light .bg-white\/10 {
+  @apply bg-slate-200;
+}
+
+html.light .bg-white\/15 {
+  @apply bg-slate-200;
+}
+
+html.light .bg-black\/30 {
+  @apply bg-slate-100;
+}
+
+html.light .bg-black\/40 {
+  @apply bg-slate-200;
+}
+
+html.light .bg-linear-to-r {
+  @apply text-slate-800;
+}
+
+/* Light Mode Gradients - Text */
+html.light .from-violet-300,
+html.light .via-blue-300,
+html.light .to-teal-200 {
+  @apply from-violet-600 via-blue-600 to-teal-600;
+}
+
+html.light .bg-linear-to-r {
+  @apply bg-gradient-to-r;
+}
+
+/* Light Mode Glass Panel */
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl shadow-[0_0_15px_rgba(255,255,255,0.05)];
+}
+
+html.light .glass-panel {
+  @apply bg-slate-50 backdrop-blur-md border border-slate-300 rounded-2xl shadow-[0_0_15px_rgba(0,0,0,0.08)];
+}
+
+/* Light Mode Focus States */
+html.light .focus\:border-violet-300\/50:focus {
+  @apply border-violet-400;
+}
+
+html.light .focus\:bg-black\/40:focus {
+  @apply bg-slate-200;
+}
+
+/* Light Mode Hover States */
+html.light .hover\:border-white\/25:hover {
+  @apply border-slate-400;
+}
+
+html.light .hover\:bg-white\/10:hover {
+  @apply bg-slate-200;
+}
+
+html.light .hover\:bg-white\/15:hover {
+  @apply bg-slate-300;
+}
+
+html.light .hover\:text-white:hover {
+  @apply text-slate-950;
+}
+
+html.light .hover\:bg-white\/6:hover {
+  @apply bg-slate-200;
+}
+
+html.light .hover\:border-white\/20:hover {
+  @apply border-slate-400;
+}
+
+/* Light Mode Gradient Overlays */
+html.light .from-violet-500\/40,
+html.light .to-blue-500\/40 {
+  @apply from-violet-300/40 to-blue-300/40;
+}
+
+html.light .from-teal-400\/40,
+html.light .to-cyan-500\/40 {
+  @apply from-teal-300/40 to-cyan-400/40;
+}
+
+html.light .from-fuchsia-500\/40,
+html.light .to-purple-500\/40 {
+  @apply from-fuchsia-300/40 to-purple-300/40;
+}
+
+html.light .from-blue-500\/40,
+html.light .to-indigo-500\/40 {
+  @apply from-blue-300/40 to-indigo-300/40;
+}
+
+html.light .from-pink-500\/40,
+html.light .to-rose-500\/40 {
+  @apply from-pink-300/40 to-rose-300/40;
+}
+
+html.light .from-emerald-500\/40,
+html.light .to-teal-500\/40 {
+  @apply from-emerald-300/40 to-teal-300/40;
+}
+
+/* Light Mode Decorative Elements */
+html.light .bg-violet-300 {
+  @apply bg-violet-500;
+}
+
+html.light .bg-teal-300 {
+  @apply bg-teal-600;
+}
+
+html.light .text-violet-200 {
+  @apply text-violet-600;
+}
+
+html.light .text-teal-200 {
+  @apply text-teal-600;
+}
+
+html.light .text-violet-300 {
+  @apply text-violet-600;
+}
+
+html.light .text-blue-300 {
+  @apply text-blue-600;
+}
+
+html.light .border-violet-300\/20 {
+  @apply border-violet-200;
+}
+
+html.light .bg-violet-500\/5 {
+  @apply bg-violet-100;
+}
+
+/* Light Mode Backdrop Blur */
+html.light .backdrop-blur-md {
+  @apply backdrop-blur-none;
+}
+
+/* Additional Light Mode Fixes */
+
+/* Missing text color mappings */
+html.light .text-white\/65 {
+  @apply text-slate-700;
+}
+
+html.light .text-white\/45 {
+  @apply text-slate-500;
+}
+
+html.light .text-white\/75 {
+  @apply text-slate-700;
+}
+
+/* Form inputs visibility */
+html.light input[type="text"],
+html.light input[type="email"],
+html.light textarea {
+  background-color: rgb(241, 245, 249);
+  color: rgb(15, 23, 42);
+  border-color: rgb(203, 213, 225);
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: rgb(148, 163, 184);
+}
+
+html.light input:focus,
+html.light textarea:focus {
+  background-color: rgb(226, 232, 240);
+  border-color: rgb(139, 92, 246);
+}
+
+/* Project cards overlay gradient */
+html.light .bg-linear-to-t.from-\[\#07070b\] {
+  background: linear-gradient(to top, rgba(226, 232, 240, 0.8), rgba(226, 232, 240, 0.4), transparent);
+}
+
+/* Nav bar rounded edges */
+html.light nav,
+html.light nav ul {
+  border-radius: 9999px;
+}
+
+html.light button[class*="rounded-full"] {
+  border-radius: 9999px;
+}
+
+/* Icon colors in light mode */
+html.light .text-violet-300\/80 {
+  @apply text-violet-600;
+}
+
+/* Project Card Overlay - Fix for light mode */
+html.light div[class*="from-\\[#07070b\\]"] {
+  background: linear-gradient(to top, rgba(226, 232, 240, 0.8), rgba(226, 232, 240, 0.4), transparent);
+}
+
+html.light .bg-linear-to-t {
+  background: linear-gradient(to top, rgba(226, 232, 240, 0.8), rgba(226, 232, 240, 0.4), transparent);
+}
