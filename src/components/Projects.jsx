@@ -55,14 +55,20 @@ const ProjectCard = ({ project, index }) => {
   const handleLeave = () => setTilt({ rx: 0, ry: 0, mx: 50, my: 50 });
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.7, delay: index * 0.05 }}
-      style={{ perspective: 1200 }}
-      className="group"
+    <a
+      href={project.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block"
     >
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-60px" }}
+        transition={{ duration: 0.7, delay: index * 0.05 }}
+        style={{ perspective: 1200 }}
+        className="group"
+      >
       <div
         ref={ref}
         onMouseMove={handleMove}
@@ -128,6 +134,7 @@ const ProjectCard = ({ project, index }) => {
         </div>
       </div>
     </motion.div>
+    </a>
   );
 };
 

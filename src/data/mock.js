@@ -80,7 +80,7 @@ export const projects = [
     tags: ["React", "Tailwind CSS", "Three.js", "Framer Motion"],
     image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&q=80",
     accent: "from-fuchsia-500/40 to-purple-500/40",
-    link: "#"
+    link: "https://ijazahmad779.github.io/ijaz-portfolio/"
   },
   {
     id: 4,
@@ -90,7 +90,7 @@ export const projects = [
     tags: ["HTML5", "CSS3", "Tailwind CSS"],
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80",
     accent: "from-blue-500/40 to-indigo-500/40",
-    link: "https://github.com/IJAZAHMAD779/orinix-clone"
+    link: "https://ijazahmad779.github.io/orinix-clone/"
   },
   {
     id: 5,
@@ -100,7 +100,7 @@ export const projects = [
     tags: ["HTML5", "Tailwind CSS", "Font Awesome", "Responsive Design"],
     image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&q=80",
     accent: "from-pink-500/40 to-rose-500/40",
-    link: "https://github.com/IJAZAHMAD779/personal-porfolio-website"
+    link: "https://ijazahmad779.github.io/personal-porfolio-website/"
   },
   {
     id: 6,
