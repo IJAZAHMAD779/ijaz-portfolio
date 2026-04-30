@@ -13,7 +13,7 @@ export const profile = {
     twitter: "https://twitter.com",
     dribbble: "https://dribbble.com"
   },
-  resumeUrl: "/IJAZ-AHMAD-Resume.pdf"
+  resumeUrl: "/ijaz-portfolio/IJAZ-AHMAD-Resume.pdf"
 };
 
 export const navItems = [
